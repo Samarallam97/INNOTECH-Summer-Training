@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+
+<NavBarComponent Background="bg-success" Links="NavLinks" BrandLink="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor">
+    <BrandContent>
+        <img src="./favicon.png"/>  Home
+    </BrandContent>
+
+    <ExtraContent>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+    </ExtraContent>
+
+</NavBarComponent>
+
+ 
+<article class="content px-4 text-white  fw-bold">
+    <div class="vh-100 w-100 bg-black p-4" id="slide1">Slide 1</div>
+    <div class="vh-100 w-100 bg-danger p-4" id="slide2">Slide 2</div>
+    <div class="vh-100 w-100 bg-success p-4" id="slide3">Slide 3</div>
+</article>
+
+
+

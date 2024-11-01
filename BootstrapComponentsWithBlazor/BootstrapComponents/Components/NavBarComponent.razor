@@ -1,0 +1,40 @@
+﻿@namespace BootstrapComponents.Components
+
+<nav class="navbar top-row navbar-expand-lg @Background">
+
+        <div class="container-fluid">
+
+        <a class="navbar-brand mb-0 h1" href="@BrandLink">@BrandContent</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#@ContentId" aria-controls="@ContentId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="@ContentId">
+                <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+
+                    @foreach (var link in Links)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@link.Url">@link.Text</a>
+                        </li>
+                    }
+
+                    @if (Dropdowns != null && Dropdowns.Any())
+                        @foreach (var dropdown in Dropdowns)
+                        {
+
+                            <DropdownComponent Title="@dropdown.Title" Background="@dropdown.Background" Direction="@dropdown.Direction" Mode="@dropdown.Mode" Options="@dropdown.Links">
+
+                            </DropdownComponent>
+                        }
+
+                </ul>
+
+                @ExtraContent
+
+            </div>       
+
+        </div>
+ </nav>
+

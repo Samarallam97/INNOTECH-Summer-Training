@@ -1,0 +1,32 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+
+<NavBarComponent Background="bg-danger" BrandLink="https://getbootstrap.com/docs/5.3" Dropdowns="Dropdowns">
+    <BrandContent>
+        <img src="./sample-data/bootstrap-logo.svg" width="30" height="24" alt="logo" />
+        Counter
+    </BrandContent>
+
+</NavBarComponent>
+
+
+<div class="p-3">
+
+    <h2>Dropdown Components</h2>
+
+    <DropdownComponent Title="Choose a page" Background="btn-dark" Direction="dropdown-center" Mode="dropdown-menu-dark" Options="@Options1">
+
+    </DropdownComponent>
+
+    <DropdownComponent Title="Choose a picture" Background="btn-success" Direction="dropend" Options="@Options2">
+
+    </DropdownComponent>
+
+</div>
+
+
+
+
+
