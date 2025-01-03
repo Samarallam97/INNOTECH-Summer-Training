@@ -1,0 +1,1 @@
+This C# console application creates a new file every minute, logging specific information about my computer, such as the number of CPU cores, available memory, operating system details, and other system statistics. The app runs continuously in the background, creating time-stamped files that capture the system's status at regular intervals.
