@@ -1,0 +1,1 @@
+C# console application designed to synchronize changes between a folder on my local hard disk and a folder on Google Drive every 2 hours. The app monitors the local folder for any changes, such as file additions, deletions, or modifications, and then updates the corresponding folder on Google Drive to match. 
